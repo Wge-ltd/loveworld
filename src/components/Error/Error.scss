@@ -1,0 +1,77 @@
+@import "../../scss/main.scss";
+
+.error-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $FAQBg;
+    padding: 2rem;
+}
+
+.error-message {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.error-button {
+    padding: 0.75rem 1rem;
+    color: #fff;
+    background-color: $Main1;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.error-button:hover {
+    background-color: $Main1;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.error-button-refresh {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $FAQBg;
+    padding: 2rem;
+}
+
+.error-message-custom {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.error-message-status {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.error-message-not-found {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.error-button-home-error {
+    margin-top: 1rem;
+}

@@ -1,0 +1,41 @@
+@import "../../../scss/main";
+
+.dashboardCard {
+    height: 9.875rem;
+    border-radius: 0.75rem;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $WhiteColor;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        height: 5rem;
+        width: 5rem
+    }
+
+    .dashboardCard_info {
+        text-align: right;
+    }
+
+    .dashboardCard_title {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: .75rem;
+    }
+
+    .dashboardCard_count {
+        font-size: 2rem;
+    }
+
+    .dashboardCard_bg {
+        position: absolute;
+        transform: rotate(99deg);
+        width: 80%;
+        height: 817%;
+        opacity: .09;
+    }
+}

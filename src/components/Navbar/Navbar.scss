@@ -1,0 +1,219 @@
+@import "../../scss/main";
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+
+  .container {
+    width: 1466px;
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include lg {
+      max-width: 96vw;
+    }
+
+    @include md {
+      margin: auto 1rem auto auto;
+    }
+  }
+
+  .navbar_logo {
+    height: 3.75rem;
+    cursor: pointer;
+
+    @include md {
+      margin-left: 2rem;
+    }
+  }
+
+  .navbar_items {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    @include lg {
+      gap: 1.5rem;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .navItem_active {
+    color: $PrimaryColor !important;
+
+    span {
+      color: $PrimaryColor !important;
+    }
+
+    svg {
+      path {
+        stroke: $PrimaryColor !important;
+      }
+    }
+  }
+
+  .navItem {
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+
+    @include md {
+      flex-direction: column;
+      position: relative;
+    }
+
+    &:hover {
+      span {
+        color: $PrimaryColor;
+      }
+
+      svg {
+        path {
+          stroke: $PrimaryColor;
+        }
+
+        @include md {
+          right: 0;
+        }
+      }
+    }
+
+    span {
+      font-size: 1.125rem;
+      color: $BlackColor;
+    }
+
+    svg {
+      margin-top: 4px;
+
+      path {
+        stroke: $BlackLight;
+      }
+
+      @include md {
+        position: absolute;
+        right: -40%;
+      }
+    }
+
+    &:hover .navItem_menu {
+      display: flex;
+
+      @include md {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        transform: none;
+        bottom: auto;
+        left: auto;
+      }
+    }
+
+    .navItem_menu {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background-color: $WhiteColor;
+      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+      padding: 0.5rem 2rem;
+      transform: translate(-50%, 100%);
+      border-radius: 0.3rem;
+      cursor: default;
+      display: none;
+      flex-direction: column;
+      transition: all 0.2s;
+      align-items: center;
+
+      div {
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 1.125rem;
+        color: $BlackColor;
+
+        &:hover {
+          color: $PrimaryColor;
+        }
+      }
+    }
+  }
+
+  .navbar_login {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    color: $PrimaryText;
+    font-weight: 700;
+    cursor: pointer;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  .navbar_mobileMenu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: $WhiteColor;
+    padding-bottom: 1rem;
+    z-index: 50;
+
+    @include md {
+      display: block;
+
+      .navbar_items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1.5rem;
+        gap: 1rem;
+      }
+
+      .navbar_login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+        margin: 1rem auto;
+
+        padding: 8px 16px;
+        background-color: $Main1;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .cancel {
+    display: none;
+
+    @include md {
+      display: block;
+      cursor: pointer;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}

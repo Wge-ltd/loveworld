@@ -1,0 +1,31 @@
+@import "../../scss/main";
+
+.select {
+    label {
+        color: $ButtonGrey;
+        font-size: .875rem;
+        margin-bottom: .38rem;
+    }
+
+    select {
+        font-size: 1rem;
+        width: 100%;
+        color: $Grey3;
+        padding: .62rem .88rem;
+        border-radius: 0.5rem;
+        border: 1px solid $ButtonBorder;
+        background: $WhiteColor;
+        box-shadow: 0px 1px 2px 0px $shadow;
+        height: 2.75rem;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .error {
+        color: $ErrorColor;
+        font-size: 12px;
+    }
+}
