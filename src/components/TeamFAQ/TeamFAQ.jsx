@@ -17,7 +17,7 @@ const TeamFAQsData = [
     },
     {
         q: "Can other info be added to an invoice?",
-        a: "Yes, Loveworld Virtual Internship allows for customization of invoices. Users can add additional information, such as specific project details, payment terms, or any other relevant data to tailor the invoice to their needs",
+        a: "Yes, Loveworld Virtual Internship allows for customization of invoices. Users can add additional information, such as specific project details, payment terms, or any other relevant data to tailor the invoice to their needs.",
     },
     {
         q: "How does billing work?",
@@ -25,7 +25,7 @@ const TeamFAQsData = [
     },
     {
         q: "How do I change my account email?",
-        a: "To change your account email, log in to your Loveworld Virtual Internship account and navigate to the account settings. Within the settings, you should find an option to update your email address. Follow the prompts to make the change, and don't forget to verify the new email for security purposes. If you encounter any issues, our support team is available to assist you",
+        a: "To change your account email, log in to your Loveworld Virtual Internship account and navigate to the account settings. Within the settings, you should find an option to update your email address. Follow the prompts to make the change, and don't forget to verify the new email for security purposes. If you encounter any issues, our support team is available to assist you.",
     },
 ];
 
