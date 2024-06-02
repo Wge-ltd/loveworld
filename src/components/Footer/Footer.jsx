@@ -101,7 +101,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_copyright">
-                    © 2023, All Rights Reserved by LoveWorld Internship
+                    © 2024, All Rights Reserved by LoveWorld Internship
                 </div>
             </div>
         </footer>
