@@ -1,0 +1,36 @@
+@import "../../../scss/main";
+
+.company_weekly_log {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    grid-row-gap: 1.25rem;
+    grid-column-gap: 3rem;
+
+    @include lg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.supervisorReview {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 3rem;
+
+    @include md {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .firstCol,
+    .secondCol {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

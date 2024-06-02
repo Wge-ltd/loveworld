@@ -1,0 +1,51 @@
+@import "../../scss/main";
+
+.futureWork {
+  background-color: $BlueBg;
+  color: $WhiteColor;
+  margin-bottom: -1px;
+
+  .container {
+    width: 1490px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    @include md {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 40px 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: $WhiteColor;
+      font-weight: 700;
+      line-height: 1.2;
+
+      @include md {
+        font-size: 2.5rem;
+      }
+
+      @include sm {
+        font-size: 2rem;
+      }
+    }
+
+    .work_button {
+      height: 45px;
+      width: 160px;
+      border-radius: 0.5rem;
+      background-color: $Main1;
+      color: $WhiteColor;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+  }
+}

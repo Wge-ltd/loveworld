@@ -1,0 +1,92 @@
+@import "../../scss/main.scss";
+
+.enrollContent {
+    background: linear-gradient(45deg, #101828 0%, #475467 100%);
+    background-size: cover;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $WhiteColor;
+
+    height: 100%;
+    width: 100%;
+    max-width: 50vw;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    right: 0;
+
+    @include md {
+        display: none;
+        position: static;
+    }
+
+    &>div {
+        padding: 2rem;
+        position: relative;
+
+        @include xl {
+            width: 94%;
+        }
+    }
+
+    .enrollContent_star {
+        height: 5rem;
+
+        @include lg {
+            height: 4rem;
+        }
+    }
+
+    h2 {
+        font-family: Nexa;
+        font-size: 3.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+
+        @include xl {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 3rem;
+        }
+
+        @include lg {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    p,
+    span {
+        color: $ParaLight;
+    }
+
+    .enrollContent_users {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .enrollContent_arrow {
+        position: absolute;
+        bottom: -35%;
+        left: -10%;
+        transform: rotate(-6deg);
+        width: 290px;
+
+
+        @include xl {
+            width: 180px;
+        }
+
+    }
+
+}
